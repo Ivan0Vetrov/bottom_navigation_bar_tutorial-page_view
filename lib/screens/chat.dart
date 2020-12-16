@@ -1,13 +1,13 @@
-
 import 'package:flutter/material.dart';
 
 
-class plifer extends StatefulWidget {
+
+class Chat extends StatefulWidget {
   @override
-  _pliferState createState() => _pliferState();
+  _ChatState createState() => _ChatState();
 }
 
-class _pliferState extends State<plifer> {
+class _ChatState extends State<Chat> {
   Map<String, bool> items = {'party': false, 'stopit': false, 'graduation': false, 'roof': false ,'wtf': false};
 
   void addItem(String item) {
@@ -75,6 +75,17 @@ class ToDoItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 22),
       child: ListTile(
+        leading: Container(
+            height: 40,
+            width: 40,
+            decoration: new BoxDecoration(
+                shape: BoxShape.circle,
+                image: new DecorationImage(
+                    fit: BoxFit.fill,
+                    image:AssetImage("images/img1.jpg")
+
+                )
+            )),
         contentPadding: EdgeInsets.symmetric(vertical: 8.0),
 
         title: Text(

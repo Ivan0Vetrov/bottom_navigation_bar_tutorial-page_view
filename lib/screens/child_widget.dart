@@ -8,14 +8,14 @@ class ChildWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String file = "";
-    if (number == AvailableNumber.First) {
-      file = "swipe";
-    } else if (number == AvailableNumber.Second) {
-      file = "plifer";
-    } else if (number == AvailableNumber.Third) {
-      file = "clubber";
-    } else {
-      file= "profile";
+      if (number == AvailableNumber.First) {
+        file = "swipe";
+      } else if (number == AvailableNumber.Second) {
+        file = "plifer";
+      } else if (number == AvailableNumber.Third) {
+        file = "clubber";
+      } else {
+        file="profile";
     }
 
     return SafeArea(
